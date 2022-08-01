@@ -1,0 +1,6 @@
+<div class="" style="padding: 30px">
+<% @news.each do |news| %>
+    <%= news.text.split(/PM|AM/).last.strip %>
+    <br><br>
+<% end %>
+</div>
